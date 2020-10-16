@@ -16,7 +16,7 @@ describe "the edit a product process" do
     expect(page).to have_content 'Product successfully updated'
   end
 
-  it "gives and error when no name is entered" do
+  it "gives an error when no cost is entered" do
     visit products_path
     click_link 'Create new product'
     fill_in 'Name', :with => 'peking duck'

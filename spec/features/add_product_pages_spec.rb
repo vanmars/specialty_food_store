@@ -14,7 +14,7 @@ describe "the add a product process" do
     expect(page).to have_content 'Cereal'
   end
 
-  it "gives and error when no name is entered" do
+  it "gives an error when no name is entered" do
     visit new_product_path
     click_on 'Create Product'
     # Tests for flash alert message
