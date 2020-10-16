@@ -14,4 +14,9 @@ describe Review do
     is_greater_than_or_equal_to(1).
     is_less_than_or_equal_to(5)
   }
+  
+  it { should validate_length_of(:content_body).
+    is_at_least(50).is_at_most(250)
+  }
+
 end
