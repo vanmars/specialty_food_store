@@ -1,4 +1,4 @@
-# _Mario's Specialty Food Store_
+# _Mario's International Food Emporium_ :convenience_store:  
 
 _16 October 2020_
 
@@ -9,10 +9,10 @@ _16 October 2020_
 ## Table of Contents
 1. [Description](https://github.com/vanmars/specialty_food_store#description)
 2. [Specifications](https://github.com/vanmars/specialty_food_store#specifications)
-3. [Database Tables Visualization](https://github.com/vanmars/specialty_food_store#data-visualization)
+3. [Database Tables](https://github.com/vanmars/specialty_food_store#data-visualization)
 4. [Setup/Installation Instructions](https://github.com/vanmars/specialty_food_store#setupinstallation-requirements)
-5. [Knonw Bugs](https://github.com/vanmars/specialty_food_store#known-bugs)
-6. [further Exploration Tasks](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
+5. [Known Bugs](https://github.com/vanmars/specialty_food_store#known-bugs)
+6. [Further Exploration Tasks](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
 7. [Support and Contact Details](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
 8. [Technologies Used](https://github.com/vanmars/specialty_food_store#technologies-used)
 9. [License](https://github.com/vanmars/specialty_food_store#license)
@@ -74,7 +74,7 @@ Your project should include seed data for 50 products and 250 reviews. Use Faker
 
 ## Setup/Installation Requirements
 To View Project:
-* Open a web browser of your choice and navigate to the following page: COMING SOOON!
+* Open a web browser of your choice and navigate to the following page: COMING SOON!
 
 To Extend Project:
 Ruby on Rails
