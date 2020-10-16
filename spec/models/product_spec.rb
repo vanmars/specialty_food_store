@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Product do
   # Associations
-  it { should have_many(:reviews) }
+  it { should have_many :reviews }
 
   # Validations
   it { should validate_presence_of :name }
