@@ -2,6 +2,8 @@ class Product < ApplicationRecord
   # Assopciations
   has_many :reviews, dependent: :destroy
 
+  # Validations
+
   # Scopes
   scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
   scope :most_reviewed, -> {(
