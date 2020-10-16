@@ -14,4 +14,13 @@ class Product < ApplicationRecord
     .order("reviews_count DESC")
     .limit(1)
   )}
+
+  #Callbacks
+  before_save(:titleize_product)
+
+  private
+    def titleize_product
+      self.name = self.name.titlecase
+    end
+
 end
