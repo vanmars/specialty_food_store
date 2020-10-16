@@ -58,26 +58,26 @@ Your project should include seed data for 50 products and 250 reviews. Use Faker
 | 3 | Review model includes following properties: author, content_body, and rating. | 
 | 4 | Full CRUD functionality for products. | 
 | 5 | Full CRUD functionality for reviews. |
-| 6 | Landing page includes basic information about the company and allows users to easily navigate to other areas of the site. Page also includes the three most recently added products and the product with the most reviews.   |  
+| 6 | Landing page includes basic information about the company and allows users to easily navigate to other areas of the site. Page also includes scope methods for displaying the three most recently added products and the product with the most reviews.   |  
 | 7 | Site includes a product section with clickable detail views. |
 | 8 | Product detail pages should contain details about the product and allow users to add a review.  | 
-| 9 | Includes Validation for: All fields should be filled out, including rating.|  
-| 10 | Includes Validation for: Rating can only be an integer between 1 and 5. | 
-| 11 | Includes Validation for: The review's content_body must be between 50 and 250 characters.| 
-| 12 | Includes Callback for: All products are automatically titleized (first letter of each word capitalized) before they are saved to the database.| 
+| 9 | Includes Validation: All fields should be filled out, including rating.|  
+| 10 | Includes Validation: Rating can only be an integer between 1 and 5. | 
+| 11 | Includes Validation: The review's content_body must be between 50 and 250 characters.| 
+| 12 | Includes Callback: All products are automatically titleized (first letter of each word capitalized) before they are saved to the database.| 
 | 13 | Seeding: Includes seed data for 50 products and 250 reviews. Uses Faker with a loop to seed the database.| 
 | 14 | Includes throrough unit and integration test coverage. | 
 | 15 | Routes follow proper convention, including root route. | 
+| 16 | Flash success and error messages for creating, updating, and deleting products and reviews present. |
 
 ## Database Tables Visualization
 <img src="./app/assets/images/tables2.png">
 
 ## Setup/Installation Requirements
-To View Project:
+**To View Project**
 * Open a web browser of your choice and navigate to the following page: COMING SOON!
 
-To Extend Project:
-Ruby on Rails
+**To Extend Project**
 1. Install Rails
 - For this project, you will need Ruby. Follow the directions [here](https://www.learnhowtoprogram.com/ruby-and-rails/getting-started-with-ruby/ruby-installation-and-setup) for setting up Ruby.
 - Install Rails on your machine with the following terminal command `gem install rails -v 5.2.0`
@@ -89,7 +89,7 @@ Ruby on Rails
 - Run `bundle` or `bundle install` in your command line to download all dependencies. (If you add additional gems later, you will need to run `bundle update <gem name>`.)
 
 3. Set Up Database
-- Run `rake db:setup` in the terminal. This is akin to running the following rake tasks all at once: db:create(creates the dev and test databases for the current env), db:schema:load (recreates the database from the schema.rb file), and db:seed(runs the db/seed.rb file).
+- Run `rake db:setup` in the terminal. This is akin to running the following rake tasks all at once: db:create(creates the dev and test databases for the current env), db:schema:load (recreates the database from the schema.rb file), and db:seed (runs the db/seed.rb file).
 
 4. Open in Text Editor
 - Open the cloned repo in a text editor of your choice.
@@ -98,15 +98,13 @@ Ruby on Rails
 
 ## Known Bugs
 
-_No known bugs present._
+_No known bugs at this time._
 
 ## Items to Improve
-- Refactor integration tests (could add before each methods to refrain from having to instantiate a new product and review every time)
+- Refactor integration tests (add a before each method to refrain from having to instantiate a new product and review before every test)
 
 ## Further Exploration Tasks
-- Add scopes to display the following information on the site:
-  - All products made in the USA for buyers that want to buy local products.
-  - Add flash success and error messages for creating products and reviews.
+- Add scopes to display the following information on the site: All products made in the USA for buyers that want to buy local products.
 - Paginate products so a page of results will only show ten products at a time.
 - Allow users to group products by a country of origin of their choice.
 - Add a 'featured' boolean so admins can choose which products they'd like to feature.
