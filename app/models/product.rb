@@ -17,10 +17,8 @@ class Product < ApplicationRecord
 
   #Callbacks
   before_save(:titleize_product)
-
   private
     def titleize_product
       self.name = self.name.titlecase
     end
-
 end
