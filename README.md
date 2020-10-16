@@ -98,7 +98,7 @@ Ruby on Rails
 
 ## Known Bugs
 
-_There are no known bugs at this time._
+- Integration tests for updating and review not working.
 
 ## Items to Improve
 - Refactor integration tests (could add before each methods to refrain from having to instantiate a new product and review every time)
