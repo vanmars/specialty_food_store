@@ -3,6 +3,7 @@ class Product < ApplicationRecord
   has_many :reviews, dependent: :destroy
 
   # Validations
+  validates :name, :cost, :country_of_origin, presence: true
 
   # Scopes
   scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
