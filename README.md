@@ -60,7 +60,7 @@ Your project should include seed data for 50 products and 250 reviews. Use Faker
 | 15 | Routes follow proper convention, including root route. | 
 
 ## Data Visualization
-<img src="./app/assets/images/tables.png">
+<img src="./app/assets/images/tables2.png">
 
 ## Setup/Installation Requirements
 To View Project:
