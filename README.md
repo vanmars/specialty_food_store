@@ -100,11 +100,12 @@ Ruby on Rails
 
 _There are no known bugs at this time._
 
+## Items to Improve
+- Refactor integration tests (could add before each methods to refrain from having to instantiate a new product and review every time)
+
 ## Further Exploration Tasks
 - Add scopes to display the following information on the site:
-  - The product with the most reviews.
-  - The three most recently added products.
-  -  All products made in the USA for buyers that want to buy local products.
+  - All products made in the USA for buyers that want to buy local products.
   - Add flash success and error messages for creating products and reviews.
 - Paginate products so a page of results will only show ten products at a time.
 - Allow users to group products by a country of origin of their choice.
