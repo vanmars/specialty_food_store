@@ -6,6 +6,17 @@ _16 October 2020_
 
 #### By _**Vanessa Stewart**_
 
+## Table of Contents
+1. [Description](https://github.com/vanmars/specialty_food_store#description)
+2. [Specifications](https://github.com/vanmars/specialty_food_store#specifications)
+3. [Database Tables Visualization](https://github.com/vanmars/specialty_food_store#data-visualization)
+4. [Setup/Installation Instructions](https://github.com/vanmars/specialty_food_store#setupinstallation-requirements)
+5. [Knonw Bugs](https://github.com/vanmars/specialty_food_store#known-bugs)
+6. [further Exploration Tasks](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
+7. [Support and Contact Details](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
+8. [Technologies Used](https://github.com/vanmars/specialty_food_store#technologies-used)
+9. [License](https://github.com/vanmars/specialty_food_store#license)
+
 ## Description
 
 _This is a Friday project for Epicodus to demonstrate mastery setting up a Rails project with Active Record. The original instructions include:_
@@ -39,7 +50,6 @@ All products are automatically titleized (first letter of each word capitalized)
 Seeding
 Your project should include seed data for 50 products and 250 reviews. Use Faker with a loop to seed the database.
 
-
 ## Specifications
 | Spec     | Behavior | 
 | -------- | -------- | 
@@ -59,12 +69,12 @@ Your project should include seed data for 50 products and 250 reviews. Use Faker
 | 14 | Includes throrough unit and integration test coverage. | 
 | 15 | Routes follow proper convention, including root route. | 
 
-## Data Visualization
+## Database Tables Visualization
 <img src="./app/assets/images/tables2.png">
 
 ## Setup/Installation Requirements
 To View Project:
-* Open a web browser of your choice and navigate to the following page:
+* Open a web browser of your choice and navigate to the following page: COMING SOOON!
 
 To Extend Project:
 Ruby on Rails
@@ -96,23 +106,14 @@ _There are no known bugs at this time._
   - The three most recently added products.
   -  All products made in the USA for buyers that want to buy local products.
   - Add flash success and error messages for creating products and reviews.
-
 - Paginate products so a page of results will only show ten products at a time.
-
 - Allow users to group products by a country of origin of their choice.
-
 - Add a 'featured' boolean so admins can choose which products they'd like to feature.
-
 - Show the average rating for each product.
-
 - Add a scope to retrieve the products with the highest average rating.
-
 - Change the ratings system so stars (or another icon) are used instead of a number.
-
 - Add Images throughout the site, including images for Products. You can use URLs (easiest) or use the Paperclip gem (which we'll be covering next week).
-
 - Jump ahead to next week and add user authentication to your site.
-
 - Make it look nice with styling!
 
 ## Support and Contact Details
@@ -123,7 +124,7 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 * HTML
 * CSS/Bootstrap
-* JavaScript
+* JavaScript/jQuery
 * Ruby
 * Rails
 
