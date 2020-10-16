@@ -1,5 +1,6 @@
 <h1><%= @product.name %></h1>
-<h3><%= @product.cost.round(2) %></h3>
+<h4>Country of Origin: <%= @product.country_of_origin %></h4>
+<h3>Cost: $ <%= @product.cost.round(2) %></h3>
 
 <% if @product.reviews.any? %>
   <h4>Here are the reviews for this product:</h4>
@@ -8,6 +9,7 @@
     <ul>
       <li>
         <%= link_to review.title, product_review_path(@product, review) %>
+        <span>(Rating: <%= review.rating %>)</span>
       </li>
     </ul>
   <% end %>
