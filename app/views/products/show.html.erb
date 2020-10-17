@@ -14,32 +14,49 @@
 </nav> 
 <%# Product Detail Page %>
 <div class="container">
-
-  <h1><%= @product.name %></h1>
-  <h4>Country of Origin: <%= @product.country_of_origin %></h4>
-  <h3>Cost: $ <%= @product.cost.round(2) %></h3>
-
-  <% if @product.reviews.any? %>
-    <h4>Here are the reviews for this product:</h4>
-
-    <% @product.reviews.each do |review| %>
-      <ul>
-        <li>
-          <%= link_to review.title, product_review_path(@product, review) %>
-          <span>(Rating: <%= review.rating %>)</span>
-        </li>
-      </ul>
-    <% end %>
-  <% else %>
-    <p>No reviews are listed for this product.</p>
-  <% end %>
-
-  <p><%= link_to "Add a review", new_product_review_path(@product) %></p>
-
-  <p><%= link_to "Edit", edit_product_path(@product) %></p>
-  <p><%= link_to "Delete product", product_path(@product),
-                          :data => {:confirm => "Are you sure?",
-                                        :method => "delete"} %></p>
-
-  <p><%= link_to "Return to products", products_path %></p>
+  <div class="row">
+    <%# Title Tile %>
+    <div class="col-lg-4">
+      <div class="jumbotron" style="background-color: #A5F8D3">
+        <h2 class="display-1 text-white"><%= @product.name %></h2>
+        <h4 class="lead"><span style="color:#802392">Country of Origin:<br></span><%= @product.country_of_origin %></h4>
+        <h5 class="lead"><span style="color:#802392">Cost:<br></span>$ <%= @product.cost.round(2) %></h5>
+      </div>
+      <%# Lower Sidebar Links %>
+      <hr>
+      <p><%= link_to "Edit Product", edit_product_path(@product) %></p>
+      <hr>
+      <p><%= link_to "Delete Product", product_path(@product),
+                              :data => {:confirm => "Are you sure?",
+                                            :method => "delete"} %></p>
+      <hr>
+      <p><%= link_to "Add a Review", new_product_review_path(@product) %></p>
+      <hr>
+    </div>
+    <%# Ratings %>
+    <div class="col-lg-8">
+      <h4 class="display-4" style="color:#802392">Reviews and Ratings</h4>
+      <br>
+       <% if @product.reviews.any? %>
+          <table class="table table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col"> 5-Star Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @product.reviews.each do |review| %>
+              <tr>
+                <td><%= link_to review.title, product_review_path(@product, review) %></td>
+                <td><%= review.rating %></td>
+              <tr>
+              <% end %>
+            </tbody>
+          </table>
+      <% else %>
+        <p>No reviews are listed for this product.</p>
+      <% end %>
+    </div>
+  </div>
 </div>

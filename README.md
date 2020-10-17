@@ -103,6 +103,7 @@ _No known bugs at this time._
 
 ## Items to Improve
 - Refactor integration tests (add a before each method to refrain from having to instantiate a new product and review before every test)
+- Add a partial for the repeated navigation bar
 
 ## Further Exploration Tasks
 - Add scopes to display the following information on the site: All products made in the USA for buyers that want to buy local products.

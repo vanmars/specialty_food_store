@@ -1,11 +1,20 @@
 <%= render "layouts/errors", :object => @product %>
+  <%= form_for @product do |f| %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <br>
+      <%= f.text_field :name, style: 'width:50%', class: 'form-control', placeholder: 'Peanut Butter Cups' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :cost %> ( $ )
+      <br>
+      <%= f.text_field :cost, style: 'width: 50%', class: 'form-control', placeholder: '5.00' %>
+    </div>
+    <div class='form-group'>
+      <%= f.label :country_of_origin %><br>
+      <%= f.text_field :country_of_origin, style: "width: 50%", class: 'form-control', placeholder: 'Bhutan' %>
+    </div>
+    <br>
+    <%= f.submit 'Submit', class:'btn btn-light', style:'background-color:#995FA3; color:#A5F8D3' %>
+  <% end %>
 
-<%= form_for @product do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :cost %>
-  <%= f.text_field :cost %>
-  <%= f.label :country_of_origin %>
-  <%= f.text_field :country_of_origin %>
-  <%= f.submit %>
-<% end %>
