@@ -14,19 +14,30 @@
 </nav> 
 <%# Review Detail Page %>
 <div class="container">
-  <h1>Review: <%= @review.title %></h1>
-  <h3>Author: <%= @review.author %></h3>
-  <hr>
-
-  <h2>Product: <%= @product.name %></h2>
-  <h3>Rating: <%= @review.rating %></h3>
-  <h3>Review: <%= @review.content_body %></h3><br>
-  <hr>
-
-  <p><%= link_to "Edit review", edit_product_review_path(@product, @review) %></p>
-  <p><%= link_to "Delete review", product_review_path(@product, @review),
-                          :data => {:confirm => "Are you sure?",
-                                        :method => "delete"} %></p>
-
-  <p><%= link_to "Return to product", product_path(@product) %></p>
+  <div class="row">
+    <div class="col-lg-5">
+      <%# Title Tile %>
+      <div class="jumbotron" style="background-color: #A5F8D3">
+        <h2 class="display-1 text-white"><%= @product.name %></h2>
+        <hr>
+        <h4 class="lead"><span style="color:#802392">Author: </span><%= @review.author %></h4>
+        <button class="btn btn-light"><%= link_to "Return to Poduct", product_path(@product) %></button>
+      </div>
+      <%# Lower Sidebar Links %>
+      <p><%= link_to "Edit Review", edit_product_review_path(@product, @review) %></p>
+      <hr>
+      <p><%= link_to "Delete Review", product_review_path(@product, @review),
+                              :data => {:confirm => "Are you sure?",
+                                            :method => "delete"} %></p>
+      <hr>
+    </div>
+    <%# Review Details and Content %>
+    <div class="col-lg-7">
+      <h4 class="display-4" style="color:#802392">Review and Rating</h4>
+      <hr>
+      <h5 class="lead"><span style="color:#A0B9C6">Title: </span><%= @review.title %></h5>
+      <h5 class="lead"><span style="color:#A0B9C6">Rating: </span><%= @review.rating %> Stars</h3>
+      <hr>
+      <h6 class="card-text" style="overflow-x:hidden"><span class="lead" style="color:#A0B9C6">COMMENTS: </span><%= @review.content_body %></h6>
+  </div>
 </div>

@@ -16,11 +16,12 @@
 <div class="container">
   <div class="row">
     <%# Title Tile %>
-    <div class="col-lg-4">
+    <div class="col-lg-5">
       <div class="jumbotron" style="background-color: #A5F8D3">
         <h2 class="display-1 text-white"><%= @product.name %></h2>
-        <h4 class="lead"><span style="color:#802392">Country of Origin:<br></span><%= @product.country_of_origin %></h4>
-        <h5 class="lead"><span style="color:#802392">Cost:<br></span>$ <%= @product.cost.round(2) %></h5>
+        <hr>
+        <h4 class="lead"><span style="color:#802392">Country of Origin: </span><%= @product.country_of_origin %></h4>
+        <h5 class="lead"><span style="color:#802392">Cost: </span>$ <%= @product.cost.round(2) %></h5>
       </div>
       <%# Lower Sidebar Links %>
       <hr>
@@ -34,7 +35,7 @@
       <hr>
     </div>
     <%# Ratings %>
-    <div class="col-lg-8">
+    <div class="col-lg-7">
       <h4 class="display-4" style="color:#802392">Reviews and Ratings</h4>
       <br>
        <% if @product.reviews.any? %>
