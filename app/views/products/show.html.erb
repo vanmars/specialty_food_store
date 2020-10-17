@@ -1,27 +1,45 @@
-<h1><%= @product.name %></h1>
-<h4>Country of Origin: <%= @product.country_of_origin %></h4>
-<h3>Cost: $ <%= @product.cost.round(2) %></h3>
-
-<% if @product.reviews.any? %>
-  <h4>Here are the reviews for this product:</h4>
-
-  <% @product.reviews.each do |review| %>
-    <ul>
-      <li>
-        <%= link_to review.title, product_review_path(@product, review) %>
-        <span>(Rating: <%= review.rating %>)</span>
+<%# NavBar %>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:  #995FA3">
+  <a class="navbar-brand" href="#"><i class="fas fa-globe-americas"></i> Mario's International Food Emporium</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/products">Home <span class="sr-only"></span></a>
       </li>
     </ul>
+  </div>
+</nav> 
+<%# Product Detail Page %>
+<div class="container">
+
+  <h1><%= @product.name %></h1>
+  <h4>Country of Origin: <%= @product.country_of_origin %></h4>
+  <h3>Cost: $ <%= @product.cost.round(2) %></h3>
+
+  <% if @product.reviews.any? %>
+    <h4>Here are the reviews for this product:</h4>
+
+    <% @product.reviews.each do |review| %>
+      <ul>
+        <li>
+          <%= link_to review.title, product_review_path(@product, review) %>
+          <span>(Rating: <%= review.rating %>)</span>
+        </li>
+      </ul>
+    <% end %>
+  <% else %>
+    <p>No reviews are listed for this product.</p>
   <% end %>
-<% else %>
-  <p>No reviews are listed for this product.</p>
-<% end %>
 
-<p><%= link_to "Add a review", new_product_review_path(@product) %></p>
+  <p><%= link_to "Add a review", new_product_review_path(@product) %></p>
 
-<p><%= link_to "Edit", edit_product_path(@product) %></p>
-<p><%= link_to "Delete product", product_path(@product),
-                        :data => {:confirm => "Are you sure?",
-                                       :method => "delete"} %></p>
+  <p><%= link_to "Edit", edit_product_path(@product) %></p>
+  <p><%= link_to "Delete product", product_path(@product),
+                          :data => {:confirm => "Are you sure?",
+                                        :method => "delete"} %></p>
 
-<p><%= link_to "Return to products", products_path %></p>
+  <p><%= link_to "Return to products", products_path %></p>
+</div>

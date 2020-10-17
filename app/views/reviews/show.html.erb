@@ -1,15 +1,32 @@
-<h1>Review: <%= @review.title %></h1>
-<h3>Author: <%= @review.author %></h3>
-<hr>
+<%# NavBar %>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:  #995FA3">
+  <a class="navbar-brand" href="#"><i class="fas fa-globe-americas"></i> Mario's International Food Emporium</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/products">Home <span class="sr-only"></span></a>
+      </li>
+    </ul>
+  </div>
+</nav> 
+<%# Review Detail Page %>
+<div class="container">
+  <h1>Review: <%= @review.title %></h1>
+  <h3>Author: <%= @review.author %></h3>
+  <hr>
 
-<h2>Product: <%= @product.name %></h2>
-<h3>Rating: <%= @review.rating %></h3>
-<h3>Review: <%= @review.content_body %></h3><br>
-<hr>
+  <h2>Product: <%= @product.name %></h2>
+  <h3>Rating: <%= @review.rating %></h3>
+  <h3>Review: <%= @review.content_body %></h3><br>
+  <hr>
 
-<p><%= link_to "Edit review", edit_product_review_path(@product, @review) %></p>
-<p><%= link_to "Delete review", product_review_path(@product, @review),
-                        :data => {:confirm => "Are you sure?",
-                                       :method => "delete"} %></p>
+  <p><%= link_to "Edit review", edit_product_review_path(@product, @review) %></p>
+  <p><%= link_to "Delete review", product_review_path(@product, @review),
+                          :data => {:confirm => "Are you sure?",
+                                        :method => "delete"} %></p>
 
-<p><%= link_to "Return to product", product_path(@product) %></p>
+  <p><%= link_to "Return to product", product_path(@product) %></p>
+</div>

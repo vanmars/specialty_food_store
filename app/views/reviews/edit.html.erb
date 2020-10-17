@@ -1,3 +1,19 @@
-<h1>Edit Review</h1>
-
-<%= render "layouts/review_form" %>
+<%# NavBar %>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:  #995FA3">
+  <a class="navbar-brand" href="#"><i class="fas fa-globe-americas"></i> Mario's International Food Emporium</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/products">Home <span class="sr-only"></span></a>
+      </li>
+    </ul>
+  </div>
+</nav> 
+<%# Edit Review Form Page %>
+<div class="container">     
+  <h1>Edit Review</h1>
+  <%= render "layouts/review_form" %>
+</div>

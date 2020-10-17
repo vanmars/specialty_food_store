@@ -1,31 +1,48 @@
-<h1>Welcome to Mario's International Food Emporium!</h1>
+<%# NavBar %>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:  #995FA3">
+  <a class="navbar-brand" href="#"><i class="fas fa-globe-americas"></i> Mario's International Food Emporium</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/products">Home <span class="sr-only"></span></a>
+      </li>
+    </ul>
+  </div>
+</nav> 
+<%# Landing Page %>
+<div class="container">
+  <h1>Welcome to Mario's International Food Emporium!</h1>
 
-<h2>About Us<h2>
-<p>Mario is the proud child of military parents. As a young child, he and his family moved regularly to stations all over the world. While Mario never got used to switching homes so often, he certainly got used to the expectation of new foods and flavors that each new location promised. Today he stays put, managing the largest specialty food store on the west coast! Stop on by and say hello. We are eager for you to join our international family.</p>
+  <h2>About Us<h2>
+    <p>Mario is the proud child of military parents. As a young child, he and his family moved regularly to stations all over the world. While Mario never got used to switching homes so often, he certainly got used to the expectation of new foods and flavors that each new location promised. Today he stays put, managing the largest specialty food store on the west coast! Stop on by and say hello. We are eager for you to join our international family.</p>
 
-<h2>Newly Added Products!</h2>
-<% if @recent_products.any?%>
-  <% @recent_products.each do |product|%>
-    <li><%= link_to product.name, product_path(product) %></li>
-  <% end %>
-<% else %>
-  <p>There are no recently added products. Check back soon!</p>
-<% end %>
-
-<h2>Most Reviewed Product</h2>
-<% if @most_reviewed_product.any?%>
-  <li><%= link_to @most_reviewed_product.first.name, product_path(@most_reviewed_product.first)%></li>
-<% end %>
-
-<h1>Product List</h1>
-<% if @products.any? %>
-  <ul>
-    <% @products.each do |product| %>
-      <li><%= link_to product.name, product_path(product) %></li>
+    <h2>Newly Added Products!</h2>
+    <% if @recent_products.any?%>
+      <% @recent_products.each do |product|%>
+        <li><%= link_to product.name, product_path(product) %></li>
+      <% end %>
+    <% else %>
+      <p>There are no recently added products. Check back soon!</p>
     <% end %>
-  </ul>
-<% else %>
-  <p>There are no products yet.</p>
-<% end %>
 
-<p><%= link_to "Create new product", new_product_path %></p>
+    <h2>Most Reviewed Product</h2>
+    <% if @most_reviewed_product.any?%>
+      <li><%= link_to @most_reviewed_product.first.name, product_path(@most_reviewed_product.first)%></li>
+    <% end %>
+
+    <h1>Product List</h1>
+    <% if @products.any? %>
+      <ul>
+        <% @products.each do |product| %>
+          <li><%= link_to product.name, product_path(product) %></li>
+        <% end %>
+      </ul>
+    <% else %>
+      <p>There are no products yet.</p>
+    <% end %>
+
+  <p><%= link_to "Create new product", new_product_path %></p>
+</div>
