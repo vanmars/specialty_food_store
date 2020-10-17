@@ -1,13 +1,21 @@
 <%= render "layouts/errors", :object => @review %>
 
 <%= form_for [@review.product, @review] do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :author %>
-  <%= f.text_field :author %>
-  <%= f.label :content_body %>
-  <%= f.text_area :content_body, size: "24x6"%>
-  <%= f.label :rating %>
-  <%= f.select(:rating, options_for_select([[1, 1], [2, 2], [3,3], [4,4], [5,5]])) %>
-  <%= f.submit %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, style: 'width:75%', class: 'form-control', placeholder: 'My Review' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :author %>
+    <%= f.text_field :author, style: 'width:75%', class: 'form-control', placeholder: 'Jane Doe' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :content_body %>
+    <%= f.text_area :content_body, size: "24x6", style: 'width:75%', class: 'form-control', placeholder: 'My comments' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :rating %>
+    <%= f.select :rating, options_for_select([[1, 1], [2, 2], [3,3], [4,4], [5,5]]), class: 'form-control'%>
+  </div>
+  <%= f.submit 'Submit', class:'btn btn-light', style:'background-color:#995FA3; color:#A5F8D3' %>
 <% end %>
