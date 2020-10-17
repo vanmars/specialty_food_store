@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/products">Home <span class="sr-only"></span></a>
+        <a class="nav-link" href="/products" style="color:#A5F8D3">Home <span class="sr-only"></span></a>
       </li>
     </ul>
   </div>
@@ -59,27 +59,30 @@
       <div class="col-md-8">
         <%# Jumbotron %>
         <div class="jumbotron" style="background-color: #9A98B5">
-          <h1 class="display-4">Welcome to Mario's!</h1>
+          <h1 class="display-4" style="color:#A5F8D3">Welcome to Mario's!</h1>
           <p class="lead">We are passionate about serving up global flavors to our local families.</p>
           <hr class="my-4">
         </div>
         <%# About Us %>
-        <div class="card ml-5 mb-3 border-0" style="max-width: 850px;">
+        <div class="card ml-5 mb-3 border-0" style="max-width: 850px">
           <div class="row no-gutters">
             <div class="col-md-2">
             </div>
             <div class="col-md-10">
               <div class="card border-0">
                 <div class="card-body">
-                  <h4 class="display-4" style="color:#802392"> About Us</h4>
+                  <h4 class="display-4" style="color:#802392"> Our Story</h4>
                   <br>
-                  <p class="card-subtitle"><span class="card-title text-muted">Mario is the proud child of military parents.</span> As a young child, he and his family moved regularly to stations all over the world. While Mario never got used to switching homes so often, he certainly got used to the expectation of new foods and flavors that each new location promised. Today he stays put, managing the largest specialty food store on the west coast! Stop on by and say hello. We are eager for you to join our international family.</p>
+                  <p class="card-title"><span class="lead text-muted">Emporium owner Mario Russo discovered his lifelong passion for food on the Sicilian hillsides where he grew up.</span> His extended family would regularly gather for picnics in nature to celebrate la bella vida. His family taught him tha the best way to enjoy life was to notice its smallest pleasures.</p>
                 </div>
               </div>
             </div>
           </div>
-          <%# Image - Not working yet %>
-          <img src="app/assets/images/orange.jpg" style="max-height: 400px">
+          <hr>
+          <%# Image %>
+          <%= image_tag 'vintage.jpg', style: "max-height: 400px; border-radius: 5%" %><br>
+          <hr>
+          <p class="card-title justify-content-start" style="max-width: 600px">Mario would eventually leave Sicily, for his parents' work as English language teachers would carry them across the globe. While Mario never got used to switching homes so often, he fell in love with the expectation of new foods and flavors that each new location promised. Today he's found his home, managing the largest international food store on the West Coast! <span class="lead text-muted">Much more than a store, we are a community, celebrating the simple joys of good food and family.</span> So stop on by, enjoy a cappucino from the cafe as you shop, and appreciate la bella vida.</p>
         </div>
       </div>
       <%# Right Navbar %>

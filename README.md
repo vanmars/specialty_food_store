@@ -11,12 +11,13 @@ _16 October 2020_
 2. [Specifications](https://github.com/vanmars/specialty_food_store#specifications)
 3. [Database Tables](https://github.com/vanmars/specialty_food_store#data-visualization)
 4. [Setup/Installation Instructions](https://github.com/vanmars/specialty_food_store#setupinstallation-requirements)
-5. [Known Bugs](https://github.com/vanmars/specialty_food_store#known-bugs)
-6. [Further Exploration Tasks](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
-7. [Support and Contact Details](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
-8. [Technologies Used](https://github.com/vanmars/specialty_food_store#technologies-used)
-9. [Photo Credits](https://github.com/vanmars/specialty_food_store#photo-credits)
-10. [License](https://github.com/vanmars/specialty_food_store#license)
+5. [Color Scheme](https://github.com/vanmars/specialty_food_store#color-scheme)
+6. [Known Bugs](https://github.com/vanmars/specialty_food_store#known-bugs)
+7. [Further Exploration Tasks](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
+8. [Support and Contact Details](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
+9. [Technologies Used](https://github.com/vanmars/specialty_food_store#technologies-used)
+10. [Photo Credits](https://github.com/vanmars/specialty_food_store#photo-credits)
+11. [License](https://github.com/vanmars/specialty_food_store#license)
 
 ## Description
 
@@ -97,6 +98,16 @@ Your project should include seed data for 50 products and 250 reviews. Use Faker
 - To Run Tests: While in the root directory of this project, run `rspec` in your command line.
 - To Run the App in Browser: While in the root directory of the project, run `rails s` in the terminal. This will start a server, which you can access by entering `localhost:3000` in your browser.
 
+## Color Scheme
+I used [Coolors](https://coolors.co/9e6240-dea47e-cd4631-f8f2dc-81adc8) to identify my site's color scheme:
+- Dark Magenta #802392
+- Purpureus # 995FA3
+- Cool Grey #9A98B5
+- Pewter Blue #A0B9C6
+- Magic Mint #A5F8D3
+
+<img src="./app/assets/images/colors.png">
+
 ## Known Bugs
 
 _No known bugs at this time._
@@ -132,7 +143,7 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 * Rails
 
 ## Photo Credits
-Orange <span>Photo by <a href="https://unsplash.com/@runblue?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Xiaolong Wong</a> on <a href="https://unsplash.com/s/photos/international-food?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+- Vintage Picnic <span>Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Brett Jordan</a> on <a href="https://unsplash.com/s/photos/international-food-market?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 ### License
 
