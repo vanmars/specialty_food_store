@@ -7,9 +7,9 @@ describe "the delete a product process" do
     fill_in 'Name', :with => 'peking duck'
     fill_in 'Cost', :with => 5
     fill_in 'Country of origin', :with => 'China'
-    click_on 'Create Product'
+    click_on 'Submit'
     click_link 'Peking Duck', match: :first
-    click_link 'Delete product'
+    click_link 'Delete Product'
     # Tests flash notice message
     expect(page).to have_content 'Product successfully deleted'
     # Tests that item was removed

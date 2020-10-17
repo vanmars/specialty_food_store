@@ -7,7 +7,7 @@ describe "the add a product process" do
     fill_in 'Name', :with => 'cereal'
     fill_in 'Cost', :with => 5
     fill_in 'Country of origin', :with => 'United States'
-    click_on 'Create Product'
+    click_on 'Submit'
     # Tests for flash notice message
     expect(page).to have_content 'Product successfully created!'
     # Tests that product name listed on products page
@@ -16,7 +16,7 @@ describe "the add a product process" do
 
   it "gives an error when no name is entered" do
     visit new_product_path
-    click_on 'Create Product'
+    click_on 'Submit'
     # Tests for flash alert message
     expect(page).to have_content 'There was an error. Please try again.'
     # Tests for validation error message

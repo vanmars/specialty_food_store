@@ -7,16 +7,16 @@ describe "the delete a review process" do
     fill_in 'Name', with: 'peking duck'
     fill_in 'Cost', with: 5
     fill_in 'Country of origin', with: 'China'
-    click_button 'Create Product'
+    click_button 'Submit'
     click_link 'Peking Duck', match: :first
-    click_link 'Add a review'
+    click_link 'Add a Review'
     fill_in 'Title', with: 'brilliant'
     fill_in 'Author', with: 'Ima Sew Ungry'
     fill_in 'Content', with: 'I had no idea grocery stores sold Peking duck, or that it could actually good. I was delightfully wrong on both counts!'
     select 4, from: 'Rating'
-    click_button 'Create Review'
+    click_button 'Submit'
     click_link 'brilliant'
-    click_link 'Delete review'
+    click_link 'Delete Review'
      # Tests flash notice message
      expect(page).to have_content 'Review successfully deleted'
      # Tests that item was removed

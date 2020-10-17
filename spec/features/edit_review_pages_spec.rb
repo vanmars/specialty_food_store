@@ -7,18 +7,18 @@ describe "the edit a review process" do
     fill_in 'Name', with: 'peking duck'
     fill_in 'Cost', with: 5
     fill_in 'Country of origin', with: 'China'
-    click_button 'Create Product'
+    click_button 'Submit'
     click_link 'Peking Duck', match: :first
-    click_link 'Add a review'
+    click_link 'Add a Review'
     fill_in 'Title', with: 'brilliant'
     fill_in 'Author', with: 'Ima Sew Ungry'
     fill_in 'Content', with: 'I had no idea grocery stores sold Peking duck, or that it could actually good. I was delightfully wrong on both counts!'
     select 4, from: 'Rating'
-    click_button 'Create Review'
+    click_button 'Submit'
     click_link 'brilliant'
-    click_link 'Edit review'
+    click_link 'Edit Review'
     select 5, from: 'Rating'
-    click_button 'Update Review'
+    click_button 'Submit'
     # Tests flash notice message
     expect(page).to have_content 'Review successfully updated'
   end
@@ -29,18 +29,18 @@ describe "the edit a review process" do
     fill_in 'Name', :with => 'peking duck'
     fill_in 'Cost', :with => 5
     fill_in 'Country of origin', :with => 'China'
-    click_button 'Create Product'
+    click_button 'Submit'
     click_link 'Peking Duck', match: :first
-    click_link 'Add a review'
+    click_link 'Add a Review'
     fill_in 'Title', :with => 'brilliant'
     fill_in 'Author', :with => 'Ima Sew Ungry'
     fill_in 'Content', :with => 'I had no idea grocery stores sold Peking duck, or that it could actually good. I was delightfully wrong on both counts!'
     select 4, from: 'Rating'
-    click_button 'Create Review'
+    click_button 'Submit'
     click_link 'brilliant'
-    click_link 'Edit review'
+    click_link 'Edit Review'
     fill_in 'Author', :with => ''
-    click_button 'Update Review'
+    click_button 'Submit'
     # Tests for flash alert message
     expect(page).to have_content 'There was an error. Please try again.'
     # Tests for validation error message
