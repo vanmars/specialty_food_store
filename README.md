@@ -15,7 +15,8 @@ _16 October 2020_
 6. [Further Exploration Tasks](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
 7. [Support and Contact Details](https://github.com/vanmars/specialty_food_store#support-and-contact-details)
 8. [Technologies Used](https://github.com/vanmars/specialty_food_store#technologies-used)
-9. [License](https://github.com/vanmars/specialty_food_store#license)
+9. [Photo Credits](https://github.com/vanmars/specialty_food_store#photo-credits)
+10. [License](https://github.com/vanmars/specialty_food_store#license)
 
 ## Description
 
@@ -126,6 +127,9 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 * JavaScript/jQuery
 * Ruby
 * Rails
+
+## Photo Credits
+Orange <span>Photo by <a href="https://unsplash.com/@runblue?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Xiaolong Wong</a> on <a href="https://unsplash.com/s/photos/international-food?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 ### License
 
