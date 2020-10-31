@@ -6,6 +6,8 @@ _16 October 2020_
 
 #### By _**Vanessa Stewart**_
 
+<img src="./app/assets/images/landing.png">
+
 ## Table of Contents
 1. [Description](https://github.com/vanmars/specialty_food_store#description)
 2. [Specifications](https://github.com/vanmars/specialty_food_store#specifications)
@@ -51,6 +53,7 @@ Your site should include a callback for the following:
 All products are automatically titleized (first letter of each word capitalized) before they are saved to the database.
 Seeding
 Your project should include seed data for 50 products and 250 reviews. Use Faker with a loop to seed the database.
+
 
 ## Specifications
 | Spec     | Behavior | 
