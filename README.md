@@ -98,7 +98,7 @@ Your project should include seed data for 50 products and 250 reviews. Use Faker
 
 4. Open in Text Editor
 - Open the cloned repo in a text editor of your choice.
-- To Run Tests: While in the root directory of this project, run `rspec` in your command line.
+- To Run Tests: While in the root directory of this project, run `rspec` in your command line. If that command gives you trouble, run `bundle exec rspec`.
 - To Run the App in Browser: While in the root directory of the project, run `rails s` in the terminal. This will start a server, which you can access by entering `localhost:3000` in your browser.
 
 ## Color Scheme
