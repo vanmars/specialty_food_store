@@ -23,7 +23,7 @@ describe "links to move between products and product pages" do
     click_on 'Cereal', match: :first
     click_on 'Home'
     # Tests products page has proper content
-    expect(page).to have_content 'About Us'
+    expect(page).to have_content 'Our Story'
     expect(page).to have_content 'Newly Added Products'
     expect(page).to have_content 'Most Reviewed Product'
     expect(page).to have_content 'Product List'
